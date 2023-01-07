@@ -46,6 +46,8 @@
                 font-size: 20px;
                 font-family: "Comic Sans MS", "Comic Sans";
 
+                cursor: url("IBeam.cur"), text;
+
             }
 
             #title {
@@ -54,14 +56,46 @@
                 color: blueviolet;
                 font-size: 28px;
 
+                cursor: url("IBeam.cur"), text;
+
+            }
+
+            #title2 {
+                margin-bottom: -10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: rgb(99, 33, 162);
+                font-size: 28px;
+
+                cursor: url("IBeam.cur"), text;
+
             }
 
             #button {
 
                 color: #74f654;
                 background-color: blueviolet;
-                margin-bottom: 10px;
                 margin-top: 25px;
+                margin-bottom: 10px;
+
+                cursor: url("Hand.cur"), pointer;
+
+            }
+
+            #button2 {
+
+                color: #74f654;
+                background-color: rgb(99, 33, 162);
+                margin-top: 25px;
+                margin-bottom: 10px;
+
+                cursor: url("Hand.cur"), pointer;
+
+            }
+
+            #info {
+
+                color: red;
+                font-style: italic;
 
             }
 
@@ -77,12 +111,25 @@
             body {
 
                 background-image: url("tiles.png");
+                cursor: url("Arrow.cur"), default;
 
             }
 
             img {
 
                 width: 200px;
+
+            }
+
+            video {
+                
+                object-fit: fill;
+
+            }
+
+            a {
+
+                cursor: url("hand.cur"), pointer;
 
             }
 
@@ -107,37 +154,47 @@
             <p id="text">BE AWARE ABOUT THE FACT THAT YOU CAN ACCIDENTALY MOVE PIECES OF THE SHIP WHILE PUTTING THE KEY IF YOU ARE ON A MOBILE DEVICE. don't get mad about the overall beauty of the site, like comic sans or the very bright colors of the sites. everything was made on purpose to look retro.</p>
             
             <div style="background-color:#65d749;">
-                
-                <button onclick="copyKiller3()" id="button">killer 3's key</button>
+
+                <p id="title2">Killer 3</p>
+                <button onclick="copyKiller3()" id="button2">killer 3's key</button>
                 <br>
                 <img src="killer3.png" alt="killer 3 (spaceship) image">
-                <video controls width="300" height="200">
+                <video autoplay loop width="300" height="200">
                     <source src="killer3Video.mp4" type="video/mp4">
                 </video>
                 <br>
+                <p id="text" style="display: inline-block; color: rgb(99, 33, 162); font-style: italic;">info: </p>
+                <p id="text" style="display: inline-block;">this is a fast and agile spaceship. projected to kill a lot of enemys. it can shot 10ish times before he needs to recharge and all thrusters are set to 350.</p>
 
             </div>
 
             <div>
 
+                <p id="title">Sobber 2</p>
                 <button onclick="copySobber2()" id="button">Sobber 2's key</button>
                 <br>
                 <img src="sobber2.png" alt="sobber 2 (spaceship) image">
-                <video controls width="300" height="200">
+                <video autoplay loop width="300" height="200" >
                     <source src="sobber2Video.mp4" type="video/mp4">
                 </video>
                 <br>
+                <p id="text" style="display: inline-block; color: blueviolet; font-style: italic;">info: </p>
+                <p id="text" style="display: inline-block;">this is a very big but manuvrable spaceship, he have 500 of storage and takes 1-2 minutes to mine all the possible.</p>
 
             </div>
 
             <div style="background-color:#65d749;">
 
-                <button onclick="copyMegaDoctor()" id="button">Mega doctor's key</button>
+                <p id="title2">Mega doctor</p>
+                <button onclick="copyMegaDoctor()" id="button2">Mega doctor's key</button>
                 <br>
                 <img src="megaDoctor.png" alt="mega doctor (spaceship) image">
-                <video controls width="300" height="200">
+                <video autoplay loop width="300" height="200">
                     <source src="megaDoctorVideo.mp4" type="video/mp4">
                 </video>
+                <br>
+                <p id="text" style="display: inline-block; color: rgb(99, 33, 162); font-style: italic;">info: </p>
+                <p id="text" style="display: inline-block;">this is a very imponent spaceship. he can heal tiny spacecrafts in a small amount of time.</p>
 
             </div>
 
